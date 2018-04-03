@@ -10,6 +10,11 @@ echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sud
 #Prepare Atom
 sudo add-apt-repository -y ppa:webupd8team/atom
 
+#prepare gnome tweak tool
+sudo add-apt-repository ppa:ricotz/testing
+sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+sudo add-apt-repository ppa:gnome3-team/gnome3
+
 sudo apt update
 
 #Install Atom
@@ -18,4 +23,8 @@ sudo apt -y install atom
 #Install Chrome
 sudo apt-get install -y google-chrome-stable
 
+#install gnome tweak tool
+sudo apt-get install gnome-tweak-tool
+
+#upgrade system
 sudo apt upgrade -y
