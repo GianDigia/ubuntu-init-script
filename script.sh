@@ -17,3 +17,5 @@ sudo apt -y install atom
 
 #Install Chrome
 sudo apt-get install -y google-chrome-stable
+
+sudo apt upgrade -y
