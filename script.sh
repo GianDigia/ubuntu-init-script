@@ -52,3 +52,8 @@ gsettings set org.gnome.desktop.interface icon-theme "Numix-Circle"
 gsettings set org.gnome.desktop.wm.preferences theme "Arc-Dark"
 gsettings set org.gnome.desktop.interface cursor-theme "DMZ-Black"
 gsettings set org.gnome.shell.extensions.user-theme name "Arc-Dark"
+
+cp ubuntu-material-wallpaper.jpg /home/$USER/Pictures/ubuntu-material-wallpaper.jpg
+gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/Pictures/ubuntu-material-wallpaper.jpg
+
+sudo reboot
