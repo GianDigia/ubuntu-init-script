@@ -19,6 +19,9 @@ sudo add-apt-repository -y ppa:gnome3-team/gnome3
 git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme -y
 sudo add-apt-repository ppa:numix/ppa -y
 
+#prepare theme 2
+sudo add-apt-repository -y ppa:dyatlov-igor/materia-theme
+
 sudo apt update
 
 #Install Atom
@@ -42,12 +45,15 @@ sudo apt install numix-gtk-theme numix-icon-theme-circle -y
 sudo apt install numix-wallpaper-* -y
 sudo apt install gnome-shell-extensions -y
 
+#install theme 2
+sudo apt install materia-gtk-theme
+
 #upgrade system
 sudo apt upgrade -y
 
 rm -d -f -r arc-theme/
 
-gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
+gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark" #"Arc-Dark"
 gsettings set org.gnome.desktop.interface icon-theme "Numix-Circle"
 gsettings set org.gnome.desktop.wm.preferences theme "Arc-Dark"
 gsettings set org.gnome.desktop.interface cursor-theme "DMZ-Black"
